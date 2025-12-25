@@ -6,7 +6,44 @@
 
 This project demonstrates how to compile C programs on macOS using GCC.
 
+## Header Files in C
+
+Header files (`.h` files) in C serve several important purposes:
+
+- **Declarations**: They contain function declarations, type definitions, and macros
+- **Interface**: They define the public interface of your code
+- **Organization**: They help organize code into logical modules
+- **Inclusion Guard**: They prevent multiple inclusions using `#ifndef`/`#define`/`#endif`
+
+Example header file structure (`utils.h`):
+```c
+#ifndef UTILS_H
+#define UTILS_H
+
+// Function declarations
+CURLcode sendHttpRequest(void);
+void draw(int x, int y);
+void processPoint(void);
+
+#endif /* UTILS_H */
+```
+
 ## Basic Compilation
+
+To compile multiple source files together:
+
+```bash
+gcc main.c utils.c -o program -lcurl
+```
+
+Or compile separately and then link:
+```bash
+gcc -c main.c -o main.o
+gcc -c utils.c -o utils.o
+gcc main.o utils.o -o program -lcurl
+```
+
+## Using gcc
 
 gcc - compile and link C programs
 
