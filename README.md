@@ -37,10 +37,6 @@ gcc -c utils.c -o utils.o
 gcc main.o utils.o -o program -lcurl
 ```
 
-```bash
-gcc main.c -o main -lcurl
-```
-
 - `-o main`: specifies the output filename
 - `-lcurl`: links the curl library from the system
 - Homebrew installs curl to /opt/homebrew/lib/libcurl.a by default
