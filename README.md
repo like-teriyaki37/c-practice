@@ -22,6 +22,8 @@ void processPoint(void);
 
 ## Basic Compilation
 
+gcc - compile and link C programs
+
 To compile multiple source files together:
 
 ```bash
@@ -34,10 +36,6 @@ gcc -c main.c -o main.o
 gcc -c utils.c -o utils.o
 gcc main.o utils.o -o program -lcurl
 ```
-
-## Using gcc
-
-gcc - compile and link C programs
 
 ```bash
 gcc main.c -o main -lcurl
