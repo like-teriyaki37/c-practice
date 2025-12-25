@@ -1,11 +1,3 @@
-// how to run C in macOs
-// gcc main.c -o main -lcurl
-// ./main
-
-## How to compile C programs on macOS
-
-This project demonstrates how to compile C programs on macOS using GCC.
-
 ## Header Files in C
 
 Header files (`.h` files) in C serve several important purposes:
