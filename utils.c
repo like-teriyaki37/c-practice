@@ -62,3 +62,7 @@ void processPoint() {
     draw(p2.x, p2.y);
 }
 
+void exampleFunction(int *value) {
+    *value = 42;
+}
+
