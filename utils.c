@@ -1,7 +1,7 @@
 #include "utils.h"
 #include <stdio.h>
 
-CURLcode sendHttpRequest() {
+CURLcode sendHttpRequest(void) {
     CURL *curl; // curl handle for HTTP requests
     CURLcode res; // curl return code
 
@@ -32,7 +32,7 @@ void draw(int x, int y) {
     printf("Drawing point at (%d, %d)\n", x, y);
 }
 
-void processPoint() {
+void processPoint(void) {
     // struct points {
     //     int x;
     //     int y;
@@ -42,12 +42,6 @@ void processPoint() {
     // int y = 20;
 
     // draw(x, y);
-
-    typedef struct {
-        int x;
-        int y;
-        char * type;
-    } Point;
 
     Point p;
     p.x = 10;

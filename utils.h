@@ -9,4 +9,10 @@ void draw(int x, int y);
 void processPoint(void);
 void exampleFunction(int *value);
 
+typedef struct {
+    int x;
+    int y;
+    char * type;
+} Point;
+
 #endif /* UTILS_H */
